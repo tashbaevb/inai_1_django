@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dune</title>
+</head>
+<body>
+
+        <h2>{{ more.title }}</h2>
+        <p>{{ more.description}}</p>
+        <img src="{{more.image.url}}">
+        <p>{{ more.genre }}</p>
+        <p>{{ more.duration }}</p>
+        <p>{{ more.country }}</p>
+
+<button type="button" class="btn btn-primary"><a href="/movie/{{ movie.id }}/update/">Change {{ movie.title }}</a></button>
+<button type="button" class="btn btn-primary"><a href="/movie/{{ movie.id }}/delete/">Delete {{movie.title  }}</a></button>
+</body>
+</html>
